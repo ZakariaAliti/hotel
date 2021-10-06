@@ -37,8 +37,8 @@
 $VotreAdresseMail="Zakariaaliti76@gmail.com";
                     $Entetes = "MIME-Version: 1.0\r\n";
                     $Entetes .= "Content-type: text/html; charset=UTF-8\r\n";
-                    $Entetes .= "From: Nom  <".$_POST['name'].">\r\n";
-                    $Entetes .= "Reply-To: Nom de votre site <".$_POST['mail'].">\r\n";
+                    $Entetes .= "From: Nom  <".$_POST['mail'].">\r\n";
+                    $Entetes .= "Reply-To: Nom  Prenom   <".$_POST['mail']."> et Adresse Email <".$_POST['name'].">\r\n";
                     $Mail=$_POST['mail']; 
                     $Sujet='=?UTF-8?B?'.base64_encode($_POST['subject']).'?=';
                     $Message=htmlentities($_POST['message'],ENT_QUOTES,"UTF-8");
